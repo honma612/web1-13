@@ -102,3 +102,12 @@ var refresh = fanction()
   setTimeout(update, 1000);
 }
 update();
+
+var thmubs = document.querySelectorAll('.thumb');
+for(idx in thmubs)
+{
+  thmubs[idx].onclick = function()
+  {
+    document.getElementById("bigimg").src = this.datase.image + '.jpg';
+  }
+}
